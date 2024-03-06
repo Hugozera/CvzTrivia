@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">questGaming</string>
+    <string name="prata">Prata</string>
+    <string name="bronze">Bronze</string>
+    <string name="ouro">Ouro</string>
+    <string name="escolha_qual_sua_armadura">Escolha, qual sua armadura?</string>
+    <string name="preencha_as_informa_es">Preencha as Informações</string>
+    <string name="nome_usuario">NOME USUARIO</string>
+    <string name="shun">Shun</string>
+    <string name="ikki">Ikki</string>
+    <string name="shiryu">Shiryu</string>
+    <string name="seya">Seya</string>
+    <string name="itchi">Itchi</string>
+    <string name="hyoga">Hyoga</string>
+    <string name="jabu">Jabu</string>
+</resources>

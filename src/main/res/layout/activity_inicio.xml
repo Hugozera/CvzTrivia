@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/amber_200"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"
+        android:text="@string/preencha_as_informa_es"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Nome"
+        android:background="@color/amber_800"
+        android:textColorHint="@color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextIdade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Idade"
+        android:inputType="number"
+        android:background="@color/amber_800"
+        android:textColorHint="@color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/buttonConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:backgroundTint="#FF5722"
+        android:text="Confirmar"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:paddingVertical="16dp" />
+
+</LinearLayout>

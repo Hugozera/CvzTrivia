@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@color/cyan_100"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<TableRow>
+        <TextView
+            android:id="@+id/textViewUsuario"
+            android:layout_width="206dp"
+            android:layout_height="63dp"
+            android:layout_weight="2"
+            android:paddingTop="19dp"
+            android:text="@string/nome_usuario"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/conquista"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:background="@color/cyan_100"
+        android:onClick="escolher"
+        android:paddingBottom="10dp"
+        android:src="@drawable/trofeu_estrela" />
+</TableRow>
+        <TextView
+            android:layout_width="202dp"
+            android:layout_height="46dp"
+            android:layout_weight="0"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+
+            android:text="Score"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+
+        <TextView
+            android:id="@+id/textViewPontuacao"
+            android:layout_width="396dp"
+            android:layout_height="49dp"
+            android:fontFamily="serif-monospace"
+            android:text="0"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:text="QUAL CAVALEIRO VOCÊ É?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+            android:textColor="@color/black"
+            android:background="@color/amber_100"
+            android:textSize="24dp" />
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/amber_100"
+        android:padding="60dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/seya"
+                android:layout_width="0dp"
+                android:layout_height="121dp"
+                android:layout_weight="1"
+                android:background="@color/amber_800"
+                android:onClick="escolher"
+                android:paddingBottom="10dp"
+                android:src="@drawable/seya" />
+
+            <ImageView
+                android:id="@+id/shiryu"
+                android:layout_width="0dp"
+                android:layout_height="121dp"
+                android:layout_weight="1"
+                android:background="@color/cyan_500"
+                android:onClick="escolher"
+                android:src="@drawable/shiryu" />
+
+        </TableRow>
+
+        <TableRow android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textViewSeya"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/amber_900"
+                android:gravity="center"
+                android:text="Seiya"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
+
+            <TextView
+                android:id="@+id/textViewShiryu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/amber_900"
+                android:gravity="center"
+                android:text="@string/shiryu"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ikki"
+                android:layout_width="0dp"
+                android:layout_height="121dp"
+                android:layout_weight="1"
+                android:background="@color/red_500"
+                android:onClick="escolher"
+                android:paddingBottom="10dp"
+                android:src="@drawable/ikki" />
+
+            <ImageView
+                android:id="@+id/shun"
+                android:layout_width="0dp"
+                android:layout_height="121dp"
+                android:layout_weight="1"
+                android:background="@color/pink_300"
+                android:onClick="escolher"
+                android:src="@drawable/shun" />
+        </TableRow>
+
+        <TableRow android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textViewIkki"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/amber_900"
+                android:gravity="center"
+                android:text="@string/ikki"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
+
+            <TextView
+                android:id="@+id/textViewShun"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/amber_900"
+                android:gravity="center"
+                android:text="@string/shun"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/yogga"
+                android:layout_width="0dp"
+                android:layout_height="121dp"
+                android:layout_weight="1"
+                android:background="@color/green_500"
+                android:onClick="escolher"
+                android:paddingBottom="10dp"
+                android:src="@drawable/yogga" />
+
+            <ImageView
+                android:id="@+id/itchi"
+                android:layout_width="0dp"
+                android:layout_height="121dp"
+                android:layout_weight="1"
+                android:background="@color/blue_500"
+                android:onClick="escolher"
+                android:src="@drawable/itchi" />
+
+        </TableRow>
+
+        <TableRow android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textViewYogga"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/amber_900"
+                android:gravity="center"
+                android:text="@string/hyoga"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
+
+            <TextView
+                android:id="@+id/textViewItchi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/amber_900"
+                android:gravity="center"
+                android:text="@string/itchi"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/jabu"
+                android:layout_width="0dp"
+                android:layout_height="121dp"
+                android:layout_weight="1"
+                android:background="@color/cyan_100"
+                android:onClick="escolher"
+                android:paddingBottom="10dp"
+                android:src="@drawable/jabu" />
+
+        </TableRow>
+
+        <TableRow android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textViewJabu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/amber_900"
+                android:gravity="center"
+                android:text="@string/jabu"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</LinearLayout>
+</ScrollView>

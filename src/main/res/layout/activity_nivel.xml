@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/amber_200"
+    >
+
+    <TextView
+        android:id="@+id/textViewNivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="center"
+        android:text="@string/escolha_qual_sua_armadura"
+        android:textColor="@color/grey_900"
+        android:textSize="25dp"
+        android:background="@color/amber_200"
+        android:fontFamily="serif-monospace" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imageViewBronze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bronze"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/buttonNivelFacil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/bronze"
+            android:layout_marginBottom="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:backgroundTint="@color/amber_900"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imageViewPrata"
+            android:layout_width="wrap_content"
+            android:layout_height="106dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/prata" />
+
+        <Button
+            android:id="@+id/buttonNivelMedio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/prata"
+            android:layout_marginBottom="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:backgroundTint="@color/amber_900"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imageViewOuro"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ouro" />
+
+        <Button
+            android:id="@+id/buttonNivelDificil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ouro"
+            android:layout_marginBottom="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:backgroundTint="@color/amber_900"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
